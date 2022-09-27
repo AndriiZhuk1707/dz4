@@ -21,25 +21,31 @@ body {
 
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+*{ outline: 1px solid red;} 
+
+.icon {
+    fill: #000000;
 }
+
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
 
 a,p,li,ul,h1,h2,h3,button {
    
    padding: 0;
+   margin: 0;
 }
 
-*{
-    outline: 1px solid red;
-} 
+
 
 a { margin: 0;
     text-decoration: none;}
 
-.img { display: block;
+img { display: block;
     max-width: 100%;
     height: auto}
 
@@ -62,8 +68,9 @@ address{
     align-items: center;
     display: flex;
    
-    
 }
+
+/* header */
 
 .Logo {
     margin-right: 95px;
@@ -74,6 +81,27 @@ address{
     color: var(--logo-text-color)
 }
 
+.logo-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 95px;
+}
+
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteiner-header {
+    height: 80px;
+
+    display: flex;
+}
+
+
 .logospan-footer{color: var(--other-text-color);}
 
 
@@ -82,11 +110,18 @@ address{
 }
 
 .header-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
     padding-inline-start: 0px;
     display: flex;
     list-style-type: none;
     text-decoration: none
 }
+
+
+.nav-knopky:hover,
+.nav-knopky:focus{ color: var(--focus-text-color);}
+
 
 .header-list.link.active.current{
     color: var(--focus-text-color);
@@ -123,19 +158,31 @@ address{
     }
 
 
+.icon-kontakt-mail {
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.icon-kontakt-contact{ 
+    margin-right: 10px;
+    fill: currentColor;
+  
+}
+
 .kontakt-list {
     padding-inline-start: 0;
     margin-left: auto;
     }
 
-.kontakt-list {
-    margin-left: auto;
-    list-style-type:none;
-    }
-
-.kontakt-mail.kontakt-contact {
+.kontakt-mail,
+.kontakt-contact {
+    display: flex;
+    align-items: center;
     padding: 4px 4px;
-    color: var(--advantage-text-color)
+    color: var(--advantage-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .kontakt-contact {
@@ -146,6 +193,7 @@ address{
     letter-spacing: 0.02em;
     color: var(--about-text-color) 
 }
+
 
 .kontakt-mail {
     display: flex;
@@ -163,9 +211,19 @@ address{
 
          /* main */
 
-.hero-frame {
-    background: #2F303A;
- }
+.hero-wraper {
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/heeder.jpg);
+    background-color: rgba(47, 48, 58, 0.4);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 .hero { 
 
@@ -175,7 +233,7 @@ address{
     align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #2F303A;
+    
  }
 
 .hero-title {
@@ -188,6 +246,7 @@ address{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--other-text-color)
+
 }
 
 .btn-order {
@@ -203,7 +262,8 @@ address{
    padding: 10px 32px 10px 32px;
    border-width: 0px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border-radius: 4px}        
+   border-radius: 4px
+}        
 
 
 
@@ -235,6 +295,18 @@ address{
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.icon-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 
 .about-list-item:not(:last-child) {
     margin-right: 30px;
@@ -293,15 +365,28 @@ address{
     background: #F5F4FA
     }
 
-.team-list {
-    display: flex;
-     margin: 0;
-    padding: 0 0 94px 0;
+.conteiner-team-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
     }
 
-.team-list-icon { background: #FFFFFF;
-    box-shadow: 
-0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+.team-list {
+    padding-inline-start: 0px;
+    display: flex;
+    margin: 0;
+    }
+
+.team-our-name {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+.team-list-icon {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
  }
     
@@ -310,7 +395,7 @@ address{
 }
 
 .section-team {
-    padding-top: 94px;
+   
     padding-bottom: 50px;
     margin: 0;
     font-weight: 700;
@@ -321,7 +406,6 @@ address{
 }
 
 .team-title-name {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -330,25 +414,115 @@ address{
 }
 
 .team-position {
-    padding-bottom: 30px;
-    margin: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
     color: var(--about-text-color)
 }
 
+.Our-team-socmer {
+    display: flex;
+ }
+
+ .Our-team-punkt:not(:last-child) {
+    margin-right: 10px;
+}
+
+.list-Our-team {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+}
+
+.list-Our-team:hover,
+.list-Our-team:focus {
+    background-color: #2196F3;
+    border-radius: 50%;
+    color: #F5F4FA;
+}
+
+.icon-Our-team {
+    fill: currentColor;
+}
+
+
+
+/* Постійні клієнти */
+.conteiner-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-client {
+    display: flex;
+}
+
+.page-client {
+    width: calc((100% - 5 * 30px) / 6);
+}
+
+
+.title-section-client{
+
+    margin: 0 0 50px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    
+}
+
+
+.page-client:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.List-compani {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.icon-clients {
+    fill: currentColor;
+
+}
+
+.List-compani:hover,
+.List-compani:focus {
+    border-color: var(--focus-text-color);
+    color: var(--focus-text-color);
+}
+
+
+
+
+
+/* footer */
 
 .footer {
-    height: 252px;
+   
     background: #2F303A
 }
 
 .conteiner-footer {
+    display: flex;
     background-color: #2F303A;
     padding-top: 60px;
-    
+    padding-bottom: 60px;
 }
+
 
 .logo-wraper {
     margin-bottom: 20px;
@@ -373,6 +547,7 @@ address{
     color: var(--other-text-color);
 }
 
+
 .com-footer {
     margin-top: 9px;
     font-style: normal;
@@ -385,10 +560,61 @@ address{
     list-style-type: none;
     }
 
+.title-footer-sylky {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: var(--other-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    }
+
+
 .address-list {list-style-type:none
     
 }
     
+.footer-sylky-blok {
+    margin-left: 70px;
+}
+
+.footer-spysok:not(:last-child) {
+    margin-right: 10px;
+}
+
+.list-Our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list-Our-team:hover,
+.list-Our-team:focus {
+    background-color: var(--focus-text-color);
+}
+
+.footer-sylky {
+    display: flex;
+}
+
+.icon-footer {
+    fill: var(--other-text-color);
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
 
 
 /*Portfolio*/
@@ -413,6 +639,7 @@ address{
 }
 
 .list-portfolio {
+  
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -430,6 +657,12 @@ address{
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.link-portfolio{display: block;}
+.link-portfolio:hover,
+.link-portfolio:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+
 .foto-portfilio{ display: block;}
 
 
@@ -439,9 +672,11 @@ address{
 
 .portfolio-icon-text {
  
-    padding: 22px 24px 22px 24px;
+    padding: 20px 24px 20px 24px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 
@@ -496,6 +731,8 @@ address{
 .btn-link :active {
     background-color: var(--focus-text-color);
     color: var(--other-text-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section-title {
