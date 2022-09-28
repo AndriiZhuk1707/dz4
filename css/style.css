@@ -214,6 +214,7 @@ address{
 .hero-wraper {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/heeder.jpg);
             background-color: rgba(47, 48, 58, 0.4);
+            background-repeat: no-repeat;
             background-position: 50% 50%;
             max-width: 1600px;
             display: flex;
