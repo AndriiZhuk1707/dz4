@@ -212,19 +212,16 @@ address{
          /* main */
 
 .hero-wraper {
-
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/heeder.jpg);
-    background-color: rgba(47, 48, 58, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    max-width: 1600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/heeder.jpg);
+            background-color: rgba(47, 48, 58, 0.4);
+            background-position: 50% 50%;
+            max-width: 1600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
 .hero { 
 
     display: flex;
@@ -313,14 +310,13 @@ address{
 }
 
 .advantage-title {
-    margin: 12px;
-    margin-left: 0;
-    font-family: 'Roboto';
+    margin-bottom: 10px;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
 }
 
 .advantage-text {
@@ -390,7 +386,8 @@ address{
     border-radius: 0px 0px 4px 4px;
  }
     
-.team-list-icon:not(:last-child) {
+.team-list-icon:not(:last-child) 
+{
     margin-right: 30px;
 }
 
