@@ -531,7 +531,7 @@ address{
 .address-list-list{
     list-style-type: none;
     margin: 0px;
-        padding: 0;
+    padding: 0;
 }
 
 .list {
@@ -587,18 +587,19 @@ address{
     margin-right: 10px;
 }
 
-.list-Our-team {
+.list-Our-team-footer{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.list-Our-team:hover,
-.list-Our-team:focus {
+.list-Our-team-footer:hover,
+.list-Our-team-footer:focus {
     background-color: var(--focus-text-color);
 }
 
